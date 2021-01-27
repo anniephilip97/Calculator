@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="./MyCalculator.css"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&family=Dosis&family=Inter:wght@200&family=Quicksand&display=swap">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>My Calculator</title>
+  </head>
+  <body>
+    <div class="box">
+	<h2 style="position: fixed; top: 13%; left:45%; color: white; font-weight: bold; text-transform: uppercase; font-family: inter, sans-serif; font-size: 18px;">Calculator</h2>
+      <div class="subbox">
+            <form action="" method="get" name="form">
+            <input type="textview" name="textview">
+			</form>
+			
+			<table cellpadding="4" cellspacing="9">
+			<tr>
+			 <td><input type="button" value="%"></td>
+			 <td><input type="button" value="C" onclick="Clean()"></td>
+			 <td><input type="button" value="<"></td>
+			 <td><input type="submit" value="/" onclick="insert('/')"></td>
+			</tr>
+			
+			<tr>
+			 <td><input type="button" value="7" onclick="insert(7)"></td>
+			 <td><input type="button" value="8" onclick="insert(8)"></td>
+			 <td><input type="button" value="9" onclick="insert(9)"></td>
+			 <td><input type="submit" value="*" onclick="insert('*')"></td>
+			</tr>
+			
+			<tr>
+			 <td><input type="button" value="4" onclick="insert(4)"></td>
+			 <td><input type="button" value="5" onclick="insert(5)"></td>
+			 <td><input type="button" value="6" onclick="insert(6)"></td>
+			 <td><input type="submit" value="-" onclick="insert('-')"></td>
+			</tr>
+			
+			<tr>
+			 <td><input type="button" value="1" onclick="insert(1)"></td>
+			 <td><input type="button" value="2" onclick="insert(2)"></td>
+			 <td><input type="button" value="3" onclick="insert(3)"></td>
+			 <td><input type="submit" value="+" onclick="insert('+')"></td>
+			</tr>
+			
+			<tr>
+			 <td><input type="button" value="+/-" onclick="opposite()"></td>
+			 <td><input type="button" value="0" onclick="insert(0)"></td>
+			 <td><input type="button" value="." onclick="insert('.')"></td>
+			 <td><input type="submit" value="=" onclick="equal()"></td>
+			</tr>
+      </div>
+    </div>
+    <script type="text/javascript" src="./MyCalculator.js"></script>
+  </body>
+</html>
